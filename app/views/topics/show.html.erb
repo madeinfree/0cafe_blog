@@ -1,0 +1,6 @@
+<% content_for :banner do %>
+  <div id="submenu">
+    <h4><%= link_to("返回上層",topics_url) %></h4>
+  </div><P>
+<% end %>
+<%= mkdown_to_html(@topic.context).html_safe %>

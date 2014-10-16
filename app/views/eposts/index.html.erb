@@ -1,0 +1,12 @@
+<% content_for :banner do %>
+  <h4 id="part_1_">文章分類</h4>
+  <div id="submenu">
+    <h6><%= link_to("高雄") %></h6>
+  </div><P>
+  <%= render :partial =>'common/bot' %>
+<% end %>
+
+<% @eposts.each do |f| %>
+  <%= st_id %>. :: 
+  <%= link_to(f.title, epost_path(f)) %><br>
+<% end %>

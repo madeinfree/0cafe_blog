@@ -1,0 +1,13 @@
+<% content_for :banner do %>
+  <h3 id="part_1_">執行動作</h3>
+  <div id="submenu">
+    <%= link_to('新增日記',new_admin_epost_path) %>
+  </div>
+  <%= render :partial =>'admin/common/menu' %>
+<% end %>
+
+<% @eposts.each do |f| %>
+  <%= f.title %> | Action =>
+  <%= link_to('Edit', edit_admin_epost_path(f)) %>
+  <%= link_to('delete', admin_epost_url(f), :method => 'delete')%><br>
+<% end %>

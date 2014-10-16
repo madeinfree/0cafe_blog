@@ -1,0 +1,13 @@
+<% content_for :banner do %>
+  <h4 id="part_1_">文章分類</h4>
+  <div id="submenu">
+    <h6><%= link_to("Rails101 交流", topics_path(:tag => '101')) %></h6>
+    <h6><%= link_to("專案開發心得", topics_path(:tag => 'project')) %></h6>
+  </div><P>
+  <%= render :partial =>'common/bot' %>
+<% end %>
+
+<% @topics.each do |f| %>
+  <%= st_id %>. :: 
+  <%= link_to(f.title, topic_path(f)) %><br>
+<% end %>

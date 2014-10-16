@@ -1,0 +1,6 @@
+<% content_for :banner do %>
+  <%= render :partial =>'common/bot' %>
+<% end %>
+<% @log.each do |f| %>
+ <%= mkdown_to_html(f.context).html_safe %>
+<% end %>

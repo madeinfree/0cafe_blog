@@ -1,0 +1,18 @@
+<div class="page_header">
+    <h1 class="logo">
+	<%= controller.class.to_s.include?('Admin')? link_to('Rails Admin', admin_topics_url) : link_to('Rails Eat', '/' )%>
+      	<span>使用 Rails 3.2 及 Ruby 1.9.3</span>
+    </h1>
+    <div class="search_box">
+        <form class="search" action="http://www.google.com/search">
+        <!--<input type="hidden" value="ihower.tw/rails3" name="as_sitesearch">-->
+        <input class="search_field" type="text" value="" name="as_q">
+        <input class="search_btn" type="submit" value="Search">
+        </form>
+    </div>
+</div>
+<div class="notice">
+    <p class="inner info_bubble">
+        記錄Rails學習過程與分享，若您發現文章中有任何錯誤，歡迎來信給我，謝謝。
+    </p>
+</div>

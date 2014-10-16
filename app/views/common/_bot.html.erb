@@ -1,0 +1,12 @@
+  <h4 id="part_1_">這是選單</h3>
+  <div id="submenu">
+    <!--topics(tag篩選)-->
+    <h6><%= link_to("Rails學習歷程", topics_url(:tag => '101')) %></h6>
+    <!--etposts(多重篩選)-->
+    <h6><%= link_to("我的美食日記", eposts_url) %></h6>
+    <!--stpage(route)-->
+    <h6><%= link_to("站台開發Log", log_url) %></h6>
+    <!--stpage(route)-->
+    <h6><%= link_to("關於站長", about_url) %></h6>
+  </div>
+

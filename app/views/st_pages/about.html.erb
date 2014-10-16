@@ -1,0 +1,10 @@
+<% content_for :banner do %>
+  <%= render :partial =>'common/bot' %>
+<% end %>
+<%
+html = <<HTML
+**aaa**
+> aadfa
+HTML
+%>
+<%= mkdown_to_html(html).html_safe %>
