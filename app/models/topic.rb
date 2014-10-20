@@ -9,4 +9,5 @@ class Topic < ActiveRecord::Base
     end
   end
   validates :title, :context, :tag, :presence => true
+  has_many :comments
 end

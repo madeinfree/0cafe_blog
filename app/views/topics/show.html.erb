@@ -4,3 +4,8 @@
   </div><P>
 <% end %>
 <%= mkdown_to_html(@topic.context).html_safe %>
+<% @comments.each do |msg| %>
+<%= msg.title %>
+<%= msg.content %>
+<% end %>
+<h4><%= link_to("Comment",new_topic_comment_path(@topic)) %></h4>

@@ -1,0 +1,6 @@
+<h3>Comment</h3>
+<%= form_for [@topic, @comment] do |f| %>
+  Title: <%= f.text_field :title %>
+  <%= f.text_area :content, size: "120x20" %><br>
+  <%= f.submit 'sumbit' %>
+<% end %>

@@ -11,20 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015114458) do
+ActiveRecord::Schema.define(version: 20141020021915) do
+
+  create_table "comments", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.date     "date"
+    t.integer  "topic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "eposts", force: true do |t|
     t.string   "title"
     t.text     "content"
     t.string   "tag"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "st_pages", force: true do |t|
-    t.string   "title"
-    t.text     "content"
-    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
