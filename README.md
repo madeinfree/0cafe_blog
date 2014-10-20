@@ -5,4 +5,3 @@
 author JZD(Jared) <br>
 link: http://rails.0cafe.tw <br>
 mail: jzd.tsai@gmail.com
-config/database.yml請設定成自己的
